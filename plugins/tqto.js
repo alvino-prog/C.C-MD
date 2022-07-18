@@ -17,6 +17,8 @@ Aguz Familia:
 https://github.com/FokusDotId
 Amelia Lisa:
 https://github.com/Ameliascrf
+Pino
+https://github.com/alvino-prog
 Aniq12
 https://github.com/aniq12
 Ilman: 
