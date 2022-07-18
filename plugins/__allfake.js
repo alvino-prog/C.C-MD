@@ -4,7 +4,7 @@ const moment = require('moment-timezone')
 
 let handler = m => m
 handler.all = async function (m) {
-	let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
+	let pp = 'https://telegra.ph/file/1721b48dbce4e804ab35c.jpg'
 	try {
 		pp = await this.profilePictureUrl(m.sender, 'image')
 	} catch (e) {
