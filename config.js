@@ -43,18 +43,18 @@ global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 
 //========Url Template Buttons=========//
 global.dtu = 'ɪɴꜱᴛᴀɢʀᴀᴍ'
-global.urlnya = "https://www.instagram.com/aguzfamilia"
+global.urlnya = "https://www.instagram.com/ashenford_"
 
 //============= callButtons =============//
 global.dtc = 'ᴄᴀʟʟ ᴏᴡɴᴇʀ'
-global.phn = '+62 813-2017-0984'
+global.phn = '+62 812-7624-2128'
 
 //============= Games ================//
 global.benar = '_*Benar✅*_'
 global.salah = '_*Salah❌*_'
 global.dikit = "dikit lagi, semangat ya :')"
 
-global.multiplier = 100 // The higher, The harder levelup
+global.multiplier = 69 // The higher, The harder levelup
 
 // Sticker WM
 global.packname = data.namabot;
@@ -62,7 +62,7 @@ global.author = data.owner;
 
 //=========== Requirements ==========//  
         global.colong1 = 'Ciss 📸'
-        global.colong2 = 'ʙy ᴀɢᴜᴢ ꜰᴀᴍɪʟɪᴀ'
+        global.colong2 = 'ʙy Pino'
 global.img = pickRandom(waifu)
 global.fla = pickRandom(flaaa)
 
