@@ -1,4 +1,4 @@
-# Family-Bot
+# C.C-Bot
 
 <a href="https://visitor-badge.glitch.me/badge?page_id=Fokusdotid/Family-MD"><img title="Visitor" src="https://visitor-badge.glitch.me/badge?page_id=Fokusdotid/Family-MD"></a>
 <a href="https://github.com/Fokusdotid/Family-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Fokusdotid/Family-MD?label=Forks&color=blue&style=flat-square"></a>
@@ -27,8 +27,8 @@
 * Download & Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/Fokusdotid/Family-MD.git
-cd Family-MD
+git clone https://github.com/alvino-prog/C.C-MD.git
+cd C.C-MD
 npm i
 node .
 ```
@@ -45,8 +45,8 @@ $ apt update && upgrade -y
 $ pkg install ffmpeg
 $ pkg install nodejs-lts
 $ pkg install git
-$ git clone https://github.com/Fokusdotid/Family-MD.git
-$ cd Family-MD
+$ git clone https://github.com/alvino-prog/C.C-MD.git
+$ cd C.C-MD
 $ npm i
 $ node .
 ```
@@ -156,6 +156,7 @@ conn.logger.level = 'debug'
 
 ##### Rewriter
 [![Fokus ID](https://github.com/fokusdotid.png?size=100)](https://github.com/fokusdotid)
+[![Pino](https://github.com/alvino-prog.png?size=100)](https://github.com/alvino-prog)
 
 ###### Collaborator
 
