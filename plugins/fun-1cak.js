@@ -7,6 +7,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 ┌「 *Pilihan* 」
 ${ar.map(v => '├ ' + v).join`\n`}
 └────
+
 Contoh:
 ${usedPrefix}${command} recent
 `.trim()
