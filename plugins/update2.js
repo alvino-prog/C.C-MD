@@ -4,7 +4,7 @@ const { promisify } = require('util')
 const { join } = require('path')
 
 let confirmation = {}
-let repository = 'alvino-prog/Family-MD'
+let repository = 'alvino-prog/family-md'
 let branch = 'main'
 
 async function handler(m, { text }) {
