@@ -8,7 +8,7 @@ let handler = async (m, { conn }) => {
     let txt = `
 Bot ini menggunakan script github
 
-https://github.com/alvino-prog/Family-MD.git
+https://github.com/alvino-prog/C.C-MD.git
 
 pliss follow dan kasih ✨⭐⭐🌟 ya pak!
 
