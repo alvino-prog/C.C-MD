@@ -1,6 +1,4 @@
-<p align="center">
-<img src="https://zenzapis.xyz/upload/1043.jpg" alt="nz" width="350"/>
-</p>
+
 # C.C-Bot
 
 <a href="https://visitor-badge.glitch.me/badge?page_id=Fokusdotid/Family-MD"><img title="Visitor" src="https://visitor-badge.glitch.me/badge?page_id=Fokusdotid/Family-MD"></a>
