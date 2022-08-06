@@ -19,3 +19,4 @@ handler.help = ['caripesan <pesan>|<jumlah>']
 handler.tags = ['tools']
 
 handler.command = /^(caripesan)$/i
+module.exports = handler
