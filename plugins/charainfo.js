@@ -4,7 +4,7 @@ let handler = async(m, { conn, text }) => {
   let res = await fetch(global.API('https://api.jikan.moe', '/v4/characters', { q: text }))
   if (!res.ok) throw await res.text()
   let json = await res.json()
-  let { name, nicknames, url, image_url, about, type } = results.json()
+  let { name, nicknames, url, image_url, about, type } = results.json[0]
 let charaingfo = `💬 *Name:* ${name}
 💭 *Nickname:* ${nicknames}
 🔗 *Link*: ${url}
