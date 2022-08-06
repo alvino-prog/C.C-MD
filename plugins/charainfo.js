@@ -1,14 +1,14 @@
 let fetch = require('node-fetch')
 let handler = async(m, { conn, text }) => {
   if (!text) throw `Masukkan query!`
-  let res = await fetch(global.API('https://api.jikan.moe', '/v4/characters', { q: text }))
+  let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/character', { q: text }))
   if (!res.ok) throw await res.text()
   let json = await res.json()
-  let { name, nicknames, url, image_url, about, type } = json.results[0]
+  let { name, alternative_names, url, image_url, type } = json.results[0]
 let charaingfo = `💬 *Name:* ${name}
-💭 *Nickname:* ${nicknames}
+💭 *Nickname:* ${alternative_names}
 🔗 *Link*: ${url}
-👤 *About*: ${about}`
+👤 *Character Type*: ${type}`
 
   conn.sendFile(m.chat, image_url, '', charaingfo, m)
 }
