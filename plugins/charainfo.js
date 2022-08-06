@@ -3,8 +3,8 @@ let handler = async(m, { conn, text }) => {
   if (!text) throw `Masukkan query!`
   let res = await fetch(global.API('https://api.jikan.moe', '/v4/characters', { q: text }))
   if (!res.ok) throw await res.text()
-  let json = await res.json()
-  let json = console.log(json)
+  let json = await res.json();
+  console.log(json)
   let { name, nicknames, url, image_url, about, type } = json.results[0]
 let charaingfo = `💬 *Name:* ${name}
 💭 *Nickname:* ${nicknames}
