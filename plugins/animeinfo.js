@@ -5,7 +5,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let res = await fetch(API('https://api.jikan.moe', '/v4/anime', { q: text }))
   if (!res.ok) throw await res.text()
   let json = await res.json()
-  let { title, members, synopsis, episodes, url, rated, score, image_url, type, start_date, end_date, mal_id } = json.results[0]
+  console.log(json)
+  let { title, members, synopsis, episodes, url, rated, score, image_url, type, start_date, end_date, mal_id } = json.data[0]
   //Scrape Genre MAL by DwiR
   let res2 = await fetch(`https://myanimelist.net/anime/${mal_id}`)
   if (!res2.ok) throw await res2.text()
