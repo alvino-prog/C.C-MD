@@ -3,9 +3,7 @@ let axios = require('axios');
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 	if (!text) throw `uhm.. urlnya mana?\n\npenggunaan:\n${usedPrefix + command} url\ncontoh:\n${usedPrefix + command} http://www.mediafire.com/file/js0gr2nozcmk9yg/example.txt/file`
 	
-	let res = await (await axios.get(API('xteam', '/dl/mediafire', {
-    nama: args[0]
-  }, 'APIKEY'))
+	let res = await (await axios.get(API('males', '/mediafire', { url: text }))).data;
 	if (res.status != 200) throw res.message;
 	let txt = `
 *Nama File:* ${res.result.filename}
@@ -13,8 +11,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 *Tipe File:* ${res.result.filetype}
 *Di Upload:* ${res.result.uploadAt}
 *Link:* ${res.result.link}
-
-
 _harap bersabar, file sedang dikirim :'v_
 `.trim()
 conn.sendButton(m.chat, txt, wm, 'menu', usedPrefix + 'menu', m)
