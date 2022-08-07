@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
     let id = m.chat
     let mCount = {}
     let totalM = 0
-    await conn.loadAllMessages(id, m => {
+    await conn.translate(id, m => {
         let user = m.key.fromMe ? conn.user.jid : m.participant ? m.participant : id.includes('g.us') ? '' : id
         if (!user) return
         if (user in mCount) mCount[user]++
