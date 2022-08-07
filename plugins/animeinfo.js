@@ -18,7 +18,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 🎗️ *Genre:* ${genres}
 💫 *Status:* ${status}
 ⏳ *Duration:* ${duration}
-➡️ *On air:* ${aired.from(", ")}
+➡️ *On air:* ${aired}
 💬 *Show Type:* ${type}
 💌️ *Rating:* ${rating}
 ❤️ *Score:* ${score}
