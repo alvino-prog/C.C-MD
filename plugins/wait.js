@@ -9,7 +9,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   let image = `data:${mime};base64,${img.toString('base64')}`
   let response = await fetch('https://api.trace.moe/search', {
   method: "POST",
-  body: fs.readFileSync("demo.jpg"),
+  body: JSON.stringify({ image }),
   headers: { "Content-type": "image/jpeg" },
 }).then((e) => e.json());
   if (!response.ok) throw 'Gambar tidak ditemukan!'
