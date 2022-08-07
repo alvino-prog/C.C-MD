@@ -8,12 +8,10 @@ let handler = async (m, { conn, usedPrefix }) => {
   await m.reply('Searching Anime Titles...')
   let image = `data:${mime};base64,${img.toString('base64')}`
   let response = await fetch('https://api.trace.moe/search', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ image }),
-  })
+  method: "POST",
+  body: fs.readFileSync("demo.jpg"),
+  headers: { "Content-type": "image/jpeg" },
+}).then((e) => e.json());
   if (!response.ok) throw 'Gambar tidak ditemukan!'
   let result = await response.json()
   let { is_adult, title, title_chinese, title_romaji, episode, season, similarity, filename, at, tokenthumb, anilist_id } = result.docs[0]
