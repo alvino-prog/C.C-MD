@@ -5,8 +5,8 @@ let handler = async(m, { conn, text }) => {
   if (!res.ok) throw await res.text()
   let json = await res.json()
   console.log(json)
-  let { name, nicknames, url, image_url, about, type } = json.data[0]
-let charaingfo = `💬 *Name:* ${name}
+  let { name, nicknames, name_kanji, url, image_url, about, type } = json.data[0]
+let charaingfo = `💬 *Name:* ${name} ${name_kanji}
 💭 *Nickname:* ${nicknames}
 🔗 *Link*: ${url}
 👤 *About*: ${about}`
