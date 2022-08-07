@@ -2,7 +2,7 @@ let fetch = require('node-fetch')
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `Uhm.. teksnya mana?\n\nContoh:\n${usedPrefix + command} naruto`
-  let res = await fetch(API('https://api.jikan.moe', '/v3/search/anime', { q: text }))
+  let res = await fetch(API('https://api.jikan.moe', '/v4/anime', { q: text }))
   if (!res.ok) throw await res.text()
   let json = await res.json()
   let { title, members, synopsis, episodes, url, rated, score, image_url, type, start_date, end_date, mal_id } = json.results[0]
@@ -11,7 +11,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!res2.ok) throw await res2.text()
   let html = await res2.text()
   let { document } = new JSDOM(html).window
-  let genAnim = [...document.querySelectorAll('div[class="spaceit_pad"] > * a')].map(el => el.href).filter(href => href.startsWith('/anime/genre/'))
+  let genAnim = [...document.querySelectorAll('div[class="spaceit_pad"] > * a')].map(el => el.href).filter(href => href.startsWith('/genres/anime/'))
   let animeingfo = `✨️ *Title:* ${title}
 🎆️ *Episodes:* ${episodes}
 🎗️ *Genre:* ${genAnim.join(", ")}
