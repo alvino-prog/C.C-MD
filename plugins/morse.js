@@ -124,7 +124,7 @@ let handler = async(m, { usedPrefix, command, text }) => {
     m.reply(Output_String)
   } else m.reply(`*_insert text!_*\n_For example:_\n\n*${usedPrefix}${command} encode Hello World*\n*${usedPrefix}${command} decode •••• • •-•• •-•• --- / •-- --- •-• •-•• -••*`)
   }
-}
+
 handler.help = ["morse encode [text]", "morse decode [morse]"]
 handler.tags = ["tools"]
 handler.command = /^(morse)/i
