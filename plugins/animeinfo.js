@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!res.ok) throw await res.text()
   let json = await res.json()
   console.log(json)
-  let { title, members, synopsis, episodes, url, rating, score, image_url, type, from, to, mal_id } = json.data[0]
+  let { title, members, synopsis, episodes, url, rating, score, image_url, status, type, aired, mal_id } = json.data[0]
   //Scrape Genre MAL by DwiR
  /*let res2 = await fetch(`https://myanimelist.net/anime/${mal_id}`)
   if (!res2.ok) throw await res2.text()
@@ -16,8 +16,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let animeingfo = `✨️ *Title:* ${title}
 🎆️ *Episodes:* ${episodes}
 
-➡️ *Start date:* ${from}
-🔚 *End date:* ${to}
+💫 *Status:* ${status}
+➡️ *On air:* ${aired}
 💬 *Show Type:* ${type}
 💌️ *Rating:* ${rating}
 ❤️ *Score:* ${score}
