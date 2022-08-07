@@ -9,9 +9,5 @@ let handler = async(m, { conn }) => {
 handler.help = ['waifu']
 handler.tags = ['internet']
 handler.command = /^(waifu)$/i
-
+//MADE IN ERPAN 1140 BERKOLABORASI DENGAN BTS
 module.exports = handler
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
