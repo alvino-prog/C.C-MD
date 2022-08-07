@@ -7,7 +7,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   let img = await q.download()
   await m.reply('Searching Anime Titles...')
   let image = `data:${mime};base64,${img.toString('base64')}`
-  let response = await fetch('https://trace.moe/api/search', {
+  let response = await fetch('https://api.trace.moe/search', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
