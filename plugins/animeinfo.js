@@ -8,11 +8,11 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   console.log(json)
   let { title, members, synopsis, episodes, url, rating, score, image_url, status, type, duration, mal_id } = json.data[0]
   //Scrape Genre MAL by DwiR
- /*let res2 = await fetch(`https://myanimelist.net/anime/${mal_id}`)
+ let res2 = await fetch(`https://myanimelist.net/anime/${mal_id}`)
   if (!res2.ok) throw await res2.text()
   let html = await res2.text()
   let { document } = new JSDOM(html).window
-  let genAnim = [...document.querySelectorAll('div[class="spaceit_pad"] > * a')].map(el => el.href).filter(href => href.startsWith('/anime/genre/'))*/
+  let genAnim = [...document.querySelectorAll('div[class="spaceit_pad"] > * a')].map(el => el.href).filter(href => href.startsWith('/anime/genre/'))
   let animeingfo = `✨️ *Title:* ${title}
 🎆️ *Episodes:* ${episodes}
 🎗️ *Genre:* ${genAnim.join(", ")}
