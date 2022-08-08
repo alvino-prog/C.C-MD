@@ -1,3 +1,4 @@
+import { JSDOM } from 'jsdom'
 let fetch = require('node-fetch')
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
