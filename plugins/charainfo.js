@@ -11,7 +11,7 @@ let charaingfo = `💬 *Name:* ${name} ${name_kanji}
 🔗 *Link*: ${url}
 👤 *About*: ${about}`
 
-  conn.sendFile(m.chat, images,{ jpg(image_url)}, '', charaingfo, m)
+  conn.sendFile(m.chat, image_url.jpg, '', charaingfo, m)
 }
 handler.help = ['character <nama>']
 handler.tags = ['internet']
