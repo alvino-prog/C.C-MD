@@ -22,6 +22,7 @@ global.APIs = { // API Prefix
   hardianto: 'https://hardianto.xyz',
   lol: 'https://api.lolhuman.xyz',
   adicug: 'https://api.adiofficial.xyz',
+  zen: 'https://zenzapis.xyz',
   males: 'https://malest.herokuapp.com'
 }
 global.APIKeys = { // APIKey Here
