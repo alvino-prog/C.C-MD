@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
  let res2 = await fetch(`https://myanimelist.net/anime/${mal_id}`)
   if (!res2.ok) throw await res2.text()
   let html = await res2.text()
-  let { document } = new JSDOM(html).window
+  let dom = new JSDOM(html).window
   let genAnim = [...document.querySelectorAll('div[class="spaceit_pad"] > * a')].map(el => el.href).filter(href => href.startsWith('/anime/genre/'))
   let animeingfo = `✨️ *Title:* ${title}
 🎆️ *Episodes:* ${episodes}
