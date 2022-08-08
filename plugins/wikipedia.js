@@ -1,4 +1,4 @@
-let wikipedia = require('./node_modules/bochilteam/scraper')
+let wikipedia = require('./node_modules/@bochilteam/scraper')
 let handler = async (m, { text, usedPrefix, command }) => {
   if (!text) throw `Contoh penggunaan ${usedPrefix}${command} Minecraft`
   let json = await wikipedia(text)
