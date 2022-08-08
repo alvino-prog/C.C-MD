@@ -1,4 +1,4 @@
-let jsdom = require('jsdom')
+let JSDOM = require('jsdom')
 let fetch = require('node-fetch')
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
