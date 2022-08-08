@@ -7,7 +7,7 @@ let handler = async(m, { conn, text }) => {
   console.log(json)
   let { name, nicknames, name_kanji, url, images, jpg, image_url, about, type } = json.data[0]
 let charaingfo = 
-   ` ${image_url}
+   ` ${images}
 💬 *Name:* ${name} ${name_kanji}
 💭 *Nickname:* ${nicknames}
 🔗 *Link*: ${url}
@@ -18,7 +18,5 @@ let charaingfo =
 handler.help = ['character <nama>']
 handler.tags = ['internet']
 handler.command = /^(chara|character)$/i
-//kyaa jangan biarkan wabot-aq terbengkalai sampai nurutomo kembali
-// Command - Re Edited -- TOXIC-DEVIL == || Character Type ||
 
 module.exports = handler
