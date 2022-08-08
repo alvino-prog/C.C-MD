@@ -1,12 +1,11 @@
-let wikipedia = require('@bochilteam/scraper')
-let handler = async (m, { text, usedPrefix, command }) => {
-  if (!text) throw `Contoh penggunaan ${usedPrefix}${command} Minecraft`
-  let json = await wikipedia(text)
-  m.reply(`
-*${json.title}*
-${json.img}
-${json.articles}
-`.trim())
+let fetch = require('node-fetch')
+let handler = async (m, { text }) => {
+  let res = await fetch(global.API('zen', '/information/wikipedia', { query: text }, 'apikey'))
+  if (!res.ok) throw await res.text()
+  let json = await res.json()
+  if (!json.result.result) throw 'Error!'
+  if (json.result.status) m.reply(`${json.result.result}\n\n@Fatur`)
+  else throw json
 }
 handler.help = ['wikipedia'].map(v => v + ' <apa>')
 handler.tags = ['internet']
