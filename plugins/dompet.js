@@ -51,6 +51,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 handler.help = ['dompet', 'atm']
 handler.tags = ['rpg']
 handler.command = /^(dompet|atm|pp|profile|profil|propil)$/i
-handler.register = false
+handler.register = true
 module.exports = handler
 
