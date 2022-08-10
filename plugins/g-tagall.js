@@ -12,6 +12,7 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants }) => {
 handler.help = ['tagall <message>']
 handler.tags = ['group']
 handler.command = /^(t(agall)?)$/i
+handler.limit = true
 
 handler.group = true
 
