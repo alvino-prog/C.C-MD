@@ -37,7 +37,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   }
 }
 handler.help = ['petpet']
-handler.tags = ['sptools', 'image','update']
+handler.tags = ['fun', 'image','update']
 handler.command = /^petpet$/i
 
 module.exports = handler
