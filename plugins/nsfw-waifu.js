@@ -9,5 +9,6 @@ let handler = async(m, { conn }) => {
 handler.help = ['waifus']
 handler.tags = ['internet']
 handler.command = /^(waifus)$/i
+handler.limit = true
 
 module.exports = handler
