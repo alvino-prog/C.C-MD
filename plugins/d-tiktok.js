@@ -32,6 +32,7 @@ ${txt}
 }
 handler.help = ['tiktok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
+handler.limit = true
 
 handler.command = /^(tik(tok)?(dl)?)$/i
 
