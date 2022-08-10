@@ -48,6 +48,7 @@ let handler  = async (m, { conn, usedPrefix, command, args, text }) => {
 handler.help = ['image <query>']
 handler.tags = ['internet']
 handler.command = /^((g)?ima?ge?)$/i
+handler.limit = true
 
 module.exports = handler
 
