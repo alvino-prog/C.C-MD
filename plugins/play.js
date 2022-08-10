@@ -36,8 +36,8 @@ handler.tags = ['downloader']
 handler.command = /^(dj|musik|song|lagu|p(lay)?)$/i
 
 handler.exp = 3
-handler.limit = false
-handler.register = false
+handler.limit = true
+handler.register = true
 
 module.exports = handler
 
