@@ -1,4 +1,4 @@
-let handler = async (m, { conn }) => {
+let handler = async (m, { conn, messageInfo }) => {
   if (!m.quoted) throw 'Reply pesan!'
   if (!m.quoted.fromMe) throw false
   if (!m.quoted.id) throw false
