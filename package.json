@@ -1,6 +1,6 @@
 {
     "name": "C.C-Md",
-    "version": "1.1.0",
+    "version": "1.2.5",
     "description": "Simple Bot WhatsApp with Baileys Multi Device",
     "depecrated": false,
     "main": "index.js",
@@ -29,16 +29,16 @@
         "stikerin",
         "wabot-aq"
     ],
-    "homepage": "https://github.com/alvino-prog/Family-MD",
+    "homepage": "https://github.com/alvino-prog/C.C-MD",
     "author": {
         "name": "Pino"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/alvino-prog/Family-MD.git"
+        "url": "git+https://github.com/alvino-prog/C.C-MD.git"
     },
     "bugs": {
-        "url": "https://github.com/alvino-prog/family-md/issues"
+        "url": "https://github.com/alvino-prog/C.C-MD/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
