@@ -1,3 +1,6 @@
+<p align="center">
+<img src="https://github.com/alvino-prog.png" alt="Pino" width="350"/>
+</p>
 
 # C.C-Bot
 
