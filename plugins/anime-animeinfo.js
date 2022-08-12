@@ -1,4 +1,4 @@
-let JSDOM = require('jsdom')
+/*let JSDOM = require('jsdom')*/
 let fetch = require('node-fetch')
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
@@ -7,13 +7,13 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!res.ok) throw await res.text()
   let json = await res.json()
   console.log(json)
-  let { title, members, synopsis, episodes, url, rating, score, image_url, status, type, duration, mal_id } = json.data[0]
+  let { title, members, synopsis, episodes, url, rating, score, images, status, type, duration, mal_id } = json.data[0]
   //Scrape Genre MAL by DwiR
- let res2 = await fetch(`https://myanimelist.net/anime/${mal_id}`)
+ /*let res2 = await fetch(`https://myanimelist.net/anime/${mal_id}`)
   if (!res2.ok) throw await res2.text()
   let html = await res2.text()
   let dom = new JSDOM(html).window
-  let genAnim = [...document.querySelectorAll('div[class="spaceit_pad"] > * a')].map(el => el.href).filter(href => href.startsWith('/anime/genre/'))
+  let genAnim = [...document.querySelectorAll('div[class="spaceit_pad"] > * a')].map(el => el.href).filter(href => href.startsWith('/anime/genre/'))*/
   let animeingfo = `✨️ *Title:* ${title}
 🎆️ *Episodes:* ${episodes}
 
@@ -25,7 +25,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 👥 *Members:* ${members}
 💚️ *Synopsis:* ${synopsis}
 🌐️ *URL*: ${url}`
-  conn.sendFile(m.chat, image_url, '', animeingfo, m)
+  conn.sendFile(m.chat, images, '', animeingfo, m)
 }
 handler.help = ['anime <judul>']
 handler.tags = ['internet']
