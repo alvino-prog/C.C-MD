@@ -7,7 +7,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!res.ok) throw await res.text()
   let json = await res.json()
   console.log(json)
-  let { title, members, synopsis, episodes, url, rating, score, images, status, type, duration, mal_id } = json.data[0]
+  let { title, members, synopsis, episodes, url, rating, score, images, image_url, status, type, duration, mal_id } = json.data[0]
+  let images = {jpg}
   //Scrape Genre MAL by DwiR
  /*let res2 = await fetch(`https://myanimelist.net/anime/${mal_id}`)
   if (!res2.ok) throw await res2.text()
