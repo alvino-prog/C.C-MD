@@ -14,8 +14,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let html = await res2.text()
   let dom = new JSDOM(html).window
   let genAnim = [...document.querySelectorAll('div[class="spaceit_pad"] > * a')].map(el => el.href).filter(href => href.startsWith('/anime/genre/'))*/
-  let animeingfo = `${images.jpg}
-  ✨️ *Title:* ${title}
+  let animeingfo = `✨️ *Title:* ${title}
 🎆️ *Episodes:* ${episodes}
 
 💫 *Status:* ${status}
