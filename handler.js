@@ -686,8 +686,8 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = async (type, m, conn) => {
     let msg = {
-        rowner: `Perintah ini hanya dapat digunakan oleh _*Team Bot Discussion!1!1!*_`,
-        owner: `Perintah ini hanya dapat digunakan oleh _*Team Bot Discussion!1!1!*_`,
+        rowner: `Perintah ini hanya dapat digunakan oleh _*Pino!1!1*_`,
+        owner: `Perintah ini hanya dapat digunakan oleh _*Pino!1!1*_`,
         mods: `Perintah ini hanya dapat digunakan oleh *Moderator*`,
         premium: 'Perintah ini hanya untuk member _*Premium*_ !',
         group: `Perintah ini hanya dapat digunakan di grup!`,
@@ -695,8 +695,8 @@ global.dfail = async (type, m, conn) => {
         admin: 'Perintah ini hanya untuk *Admin* grup!',
         botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
         unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
-        nsfw: `NSFW tidak aktif, Silahkan hubungi Team Bot Discussion untuk mengaktifkan fitur ini!`,
-        rpg: `RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur ini!`,
+        nsfw: `NSFW tidak aktif, Silahkan hubungi Pino untuk mengaktifkan fitur ini!`,
+        rpg: `RPG tidak aktif, Silahkan hubungi Pino Untuk mengaktifkan fitur ini!`,
         restrict: 'Fitur ini di *disable*!'
     }[type]
     if (msg) return conn.reply(m.chat, msg, m, { mentions: conn.parseMention(msg) })
