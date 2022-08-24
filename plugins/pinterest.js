@@ -18,8 +18,4 @@ handler.tags = ['internet']
 handler.command = /^(pinterest)$/i
 
 module.exports = handler
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Pr
+
